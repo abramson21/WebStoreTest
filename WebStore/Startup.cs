@@ -39,7 +39,7 @@ namespace WebStore
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller}/{actrion=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
