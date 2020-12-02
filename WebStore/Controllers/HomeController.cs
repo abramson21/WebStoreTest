@@ -16,7 +16,7 @@ namespace WebStore.Controllers
             new Employee() { Id = 1, FirstName = "Иван", LastName = "Иванов", Patronymic = "Иванович", Age = 26 },
             new Employee() { Id = 1, FirstName = "Петр", LastName = "Петров", Patronymic = "Петрович", Age = 28 },
             new Employee() { Id = 1, FirstName = "Сидор", LastName = "Сидоров", Patronymic = "Сидорович", Age = 26 },
-        }
+        };
 
         public HomeController(IConfiguration Configuration) => _Configuration = Configuration;
         public IActionResult Index()
@@ -33,7 +33,7 @@ namespace WebStore.Controllers
 
         public IActionResult Employes()
         {
-            return View();
+            return View(_Employee);
         }
     }
 
